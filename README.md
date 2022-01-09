@@ -105,7 +105,7 @@ _Below is an example of how you can instruct your audience on installing and set
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/rsensenig/course-project-rsensenig.git
+   git clone https://github.com/CodeSquad-Boston/course-project-rsensenig.git
    ```
 3. Install NPM packages
    ```sh
