@@ -5,123 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Page</title>
-    <style>
-        thead tr td {
-            font-weight: bold;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="./public/styles/styles.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">
-            <img src="./public/images/CodeSquad-Comics-logo.png" alt="CodeSquad Comics next to a row of books">
-        </a>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="login.html">LOGIN</a></li>
-        </ul>
-    </nav>
+    <div class="header">
+        <nav>
+            <a href="index.html">
+                <img src="./public/images/CodeSquad-Comics-logo.png" alt="CodeSquad Comics next to a row of books">
+            </a>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </nav>
+    </div>
     <main>
         <h1>ADMIN PAGE</h1>
         <button type="button">ADD NEW COMIC</button>
-        <table>
-            <thead>
-                <tr>
-                    <td>COMIC TITLE</td>
-                    <td>EDIT</td>
-                    <td>DELETE</td>
-                </tr>
-            </thead>
+        <div class="comic-table">
+            <table>
+                <thead>
+                    <tr>
+                        <td>COMIC TITLE</td>
+                        <td>EDIT</td>
+                        <td>DELETE</td>
+                    </tr>
+                </thead>
 
-            <tbody>
-                <tr>
-                    <td>Batman: The Dark Knight Returns</td>
-                    <td><input type="button" value="EDIT"></td>
-                    <td><input type="button" value="DELTE"></td>
-                </tr>
-                <tr>
-                    <td>Black Panther: A Nation Under Our Feet Book 1</td>
-                    <td><input type="button" value="EDIT"></td>
-                    <td><input type="button" value="DELTE"></td>
-                </tr>
-                <tr>
-                    <td>Fun Home: A Family Tragicomic</td>
-                    <td><input type="button" value="EDIT"></td>
-                    <td><input type="button" value="DELTE"></td>
-                </tr>
-                <tr>
-                    <td>Hunter X Hunter Vol. 1</td>
-                    <td><input type="button" value="EDIT"></td>
-                    <td><input type="button" value="DELTE"></td>
-                </tr>
-                <tr>
-                    <td>Lumberjanes Vol. 1</td>
-                    <td><input type="button" value="EDIT"></td>
-                    <td><input type="button" value="DELTE"></td>
-                </tr>
-                <tr>
-                    <td>March: Book One</td>
-                    <td><input type="button" value="EDIT"></td>
-                    <td><input type="button" value="DELTE"></td>
-                </tr>
-                <tr>
-                    <td>One Piece, Vol. 1: Romance Dawn</td>
-                    <td><input type="button" value="EDIT"></td>
-                    <td><input type="button" value="DELTE"></td>
-                </tr>
-                <tr>
-                    <td>Parabale of the Sower</td>
-                    <td><input type="button" value="EDIT"></td>
-                    <td><input type="button" value="DELTE"></td>
-                </tr>
-                <tr>
-                    <td>Queer: A Graphic History</td>
-                    <td><input type="button" value="EDIT"></td>
-                    <td><input type="button" value="DELTE"></td>
-                </tr>
-                <tr>
-                    <td>The Walking Dead, Vol. 1: Days Gone Bye</td>
-                    <td><input type="button" value="EDIT"></td>
-                    <td><input type="button" value="DELTE"></td>
-                </tr>
-                <tr>
-                    <td>Wake: The Hidden History of Women-Led Slave Revolts</td>
-                    <td><input type="button" value="EDIT"></td>
-                    <td><input type="button" value="DELTE"></td>
-                </tr>
-                <tr>
-                    <td>Watchmen</td>
-                    <td><input type="button" value="EDIT"></td>
-                    <td><input type="button" value="DELTE"></td>
-                </tr>
-            </tbody>
-        </table>
+                <tbody>
+                    <tr>
+                        <td>Batman: The Dark Knight Returns</td>
+                        <td><input type="button" value="EDIT"></td>
+                        <td><input type="button" value="DELTE"></td>
+                    </tr>
+                    <tr>
+                        <td>Black Panther: A Nation Under Our Feet Book 1</td>
+                        <td><input type="button" value="EDIT"></td>
+                        <td><input type="button" value="DELTE"></td>
+                    </tr>
+                    <tr>
+                        <td>Fun Home: A Family Tragicomic</td>
+                        <td><input type="button" value="EDIT"></td>
+                        <td><input type="button" value="DELTE"></td>
+                    </tr>
+                    <tr>
+                        <td>Hunter X Hunter Vol. 1</td>
+                        <td><input type="button" value="EDIT"></td>
+                        <td><input type="button" value="DELTE"></td>
+                    </tr>
+                    <tr>
+                        <td>Lumberjanes Vol. 1</td>
+                        <td><input type="button" value="EDIT"></td>
+                        <td><input type="button" value="DELTE"></td>
+                    </tr>
+                    <tr>
+                        <td>March: Book One</td>
+                        <td><input type="button" value="EDIT"></td>
+                        <td><input type="button" value="DELTE"></td>
+                    </tr>
+                    <tr>
+                        <td>One Piece, Vol. 1: Romance Dawn</td>
+                        <td><input type="button" value="EDIT"></td>
+                        <td><input type="button" value="DELTE"></td>
+                    </tr>
+                    <tr>
+                        <td>Parabale of the Sower</td>
+                        <td><input type="button" value="EDIT"></td>
+                        <td><input type="button" value="DELTE"></td>
+                    </tr>
+                    <tr>
+                        <td>Queer: A Graphic History</td>
+                        <td><input type="button" value="EDIT"></td>
+                        <td><input type="button" value="DELTE"></td>
+                    </tr>
+                    <tr>
+                        <td>The Walking Dead, Vol. 1: Days Gone Bye</td>
+                        <td><input type="button" value="EDIT"></td>
+                        <td><input type="button" value="DELTE"></td>
+                    </tr>
+                    <tr>
+                        <td>Wake: The Hidden History of Women-Led Slave Revolts</td>
+                        <td><input type="button" value="EDIT"></td>
+                        <td><input type="button" value="DELTE"></td>
+                    </tr>
+                    <tr>
+                        <td>Watchmen</td>
+                        <td><input type="button" value="EDIT"></td>
+                        <td><input type="button" value="DELTE"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
     <footer>
-        <h3>VISIT US</h3>
-        <p>CodeSquad Comics
+        <div class="footer">
+            <h3>VISIT US</h3>
+            <p>CodeSquad Comics
+                <br>
+                123 Dorchester Avenue
+                <br>
+                Boston, MA 02124</p>
+            <h3>LINKS</h3>
+            <p><a href="index.html">Home</a>
             <br>
-            123 Dorchester Avenue
+            <a href="about.html">About</a>
             <br>
-            Boston, MA 02124</p>
-        <h3>LINKS</h3>
-        <p><a href="index.html">Home</a>
-        <br>
-        <a href="about.html">About</a>
-        <br>
-        <a href="login.html">Login</a></p>
-        <h3>FOLLOW US</h3>
-        <p><a href="#">Facebook</a>
-        <br>
-        <a href="#">Instagram</a>
-        <br>
-        <a href="#">Twitter</a></p>
-        <h3>A PRODUCT OF</h3>
-        <a href="http://codesquad.org/" target="_blank" rel="noopener noreferrer">
-            <img src="./public/images/CodeSquad-logo-a.png" alt="CodeSquad logo">
-        </a>
+            <a href="login.html">Login</a></p>
+            <h3>FOLLOW US</h3>
+            <p><a href="#">Facebook</a>
+            <br>
+            <a href="#">Instagram</a>
+            <br>
+            <a href="#">Twitter</a></p>
+            <h3>A PRODUCT OF</h3>
+            <a href="http://codesquad.org/" target="_blank" rel="noopener noreferrer">
+                <img src="./public/images/CodeSquad-logo-b.png" alt="CodeSquad logo">
+            </a>
+        </div>
     </footer>
 </body>
 </html>

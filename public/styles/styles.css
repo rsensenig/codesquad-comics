@@ -1,0 +1,120 @@
+:root {
+    --teal: #006B6B;
+    --light-teal: #009E9E;
+    --yellow: #FCCF14;
+    --blue: #063C5E;
+    --grey: #C2C2C2;
+    --white: #FFFFFF
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    max-width: 100vw;
+    margin: 0%;
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: var(--blue);
+    width: auto;
+    color: var(--white);
+    padding: 10px 20px;
+}
+
+.header img {
+    width: 300px;
+    height: auto;
+}
+
+.header ul {
+    list-style-type: none;
+}
+
+.header a:link,
+a:hover,
+a:active,
+a:visited {
+    color: var(--white);
+}
+
+.footer {
+    background-color: var(--blue);
+    width: auto;
+    color: var(--white);
+    padding: 20px 10px;
+    border-top: solid 5px var(--yellow);
+}
+
+.footer a:link,
+a:hover,
+a:active,
+a:visited {
+    color: var(--white);
+}
+
+.footer img {
+    width: 150px;
+    height: auto;
+}
+
+.comic-table {
+    margin: 20px 0px 
+}
+
+.comic-table thead tr td {
+    font-weight: bold;
+    text-align: center;
+}
+
+.comic-collection img {
+    width: 200px;
+    height: auto;
+}
+
+.card {
+    margin: 10vh auto;
+    width: 50%;
+    max-width: 50%;
+}
+
+.card-top {
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--yellow);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 50px;
+    border: solid 4px var(--yellow);
+    border-radius: 40px 40px 0px 0px;
+}
+
+.card-cover {
+    width: 400px;
+    height: 600px;
+    background-image: url("../images/lumberjanes.jpg");
+    background-position: center center;
+    background-size: cover;
+    border: solid 3px var(--white);
+    border-radius: 40px;
+    margin: 0 auto;
+}
+
+.card-bottom {
+    width: 100%;
+    background-color: var(--white);
+    padding: 20px 30px;
+    border-left: solid 4px var(--yellow);
+    border-right: solid 4px var(--yellow);
+    border-bottom: solid 4px var(--yellow);
+    border-radius: 0px 0px 40px 40px;
+}
+
+.category {
+    color: var(--blue);
+    text-decoration: underline;
+    font-weight: bold;
+}
