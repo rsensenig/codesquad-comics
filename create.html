@@ -21,61 +21,72 @@
         </nav>
     </div>
     <main>
-        <h1>CREATE NEW COMIC</h1>
-        <form action="#">
-            <p><label for="title">Title:</label>
-            <input type="text" name="title" id="title" placeholder="Title"></p>
-            <p><label for="author">Author:</label>
-            <input type="text" name="author" id="author" placeholder="Author"></p>
-            <p><label for="publisher">Publisher:</label>
-            <select name="publisher" id="publisher">
-                <option value="" selected disabled>Select</option>
-                <option value="BOOM!Box">BOOM! Box</option>
-                <option value="DCComics">DC Comics</option>
-                <option value="HarryNAbrams">Harry N. Abrams</option>
-                <option value="IconBooks">Icon Books</option>
-                <option value="ImageComcis">Image Comcis</option>
-                <option value="Marvel">Marvel</option>
-                <option value="Simon&Schuster">Simon & Schuster</option>
-                <option value="TopShelfProductions">Top Shelf Productions</option>
-                <option value="VIZMediaLLC">VIZ Media LLC</option>
-            </select></p>
-            <p><label for="genre">Genre:</label>
-            <input type="text" name="genre" id="genre" placeholder="Genre"></p>
-            <p><label for="number of pages">Number of pages:</label>
-            <input type="number" name="NumberOfPages" id="NumberOfPages" placeholder="Number of pages" min="1"></p>
-            <p><label for="rating">Rating:</label>
-            <input type="number" name="rating" id="rating" style="width: 30px;" min="1" max="5"></p>
-            <p><label for="synopsis">Synopsis:</label>
-            <textarea name="synopsis" id="synopsis" rows="2" cols="20" placeholder="Synopsis"></textarea></p>
-            <br>
-            <input type="submit" value="Submit">
-        </form>
+        <div class="container">
+            <h1>Create New Comic</h1>
+            <div class="form-container">
+                <form action="#">
+                    <div><label for="title">Title:</label>
+                    <input type="text" name="title" id="title" placeholder="Title"></div>
+                    <div><label for="author">Author:</label>
+                    <input type="text" name="author" id="author" placeholder="Author"></div>
+                    <div><label for="publisher">Publisher:</label>
+                    <select name="publisher" id="publisher">
+                        <option value="" selected disabled>Select</option>
+                        <option value="BOOM!Box">BOOM! Box</option>
+                        <option value="DCComics">DC Comics</option>
+                        <option value="HarryNAbrams">Harry N. Abrams</option>
+                        <option value="IconBooks">Icon Books</option>
+                        <option value="ImageComcis">Image Comcis</option>
+                        <option value="Marvel">Marvel</option>
+                        <option value="Simon&Schuster">Simon & Schuster</option>
+                        <option value="TopShelfProductions">Top Shelf Productions</option>
+                        <option value="VIZMediaLLC">VIZ Media LLC</option>
+                    </select></div>
+                    <div><label for="genre">Genre:</label>
+                    <input type="text" name="genre" id="genre" placeholder="Genre"></div>
+                    <div><label for="number of pages">Number of pages:</label>
+                    <input type="number" name="NumberOfPages" id="NumberOfPages" placeholder="Number of pages" min="1"></div>
+                    <div><label for="rating">Rating:</label>
+                    <input type="number" name="rating" id="rating" placeholder="number (0-5)" min="1" max="5"></div>
+                    <div><label for="synopsis">Synopsis:</label>
+                    <textarea name="synopsis" id="synopsis" rows="2" cols="20" placeholder="Synopsis"></textarea></div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="footer">
-            <h3>VISIT US</h3>
-            <p>CodeSquad Comics
+            <span class="visit-us">
+                <h3>Visit Us</h3>
+                <p>CodeSquad Comics
+                    <br>
+                    123 Dorchester Avenue
+                    <br>
+                    Boston, MA 02124</p>
+            </span>
+            <span class="links">
+                <h3>Links</h3>
+                <p><a href="index.html">Home</a>
                 <br>
-                123 Dorchester Avenue
+                <a href="about.html">About</a>
                 <br>
-                Boston, MA 02124</p>
-            <h3>LINKS</h3>
-            <p><a href="index.html">Home</a>
-            <br>
-            <a href="about.html">About</a>
-            <br>
-            <a href="login.html">Login</a></p>
-            <h3>FOLLOW US</h3>
-            <p><a href="#">Facebook</a>
-            <br>
-            <a href="#">Instagram</a>
-            <br>
-            <a href="#">Twitter</a></p>
-            <h3>A PRODUCT OF</h3>
-            <a href="http://codesquad.org/" target="_blank" rel="noopener noreferrer">
-                <img src="./public/images/CodeSquad-logo-b.png" alt="CodeSquad logo">
-            </a>
+                <a href="login.html">Login</a></p>
+            </span>
+            <span class="follow-us">
+                <h3>Follow Us</h3>
+                <p><a href="#">Facebook</a>
+                <br>
+                <a href="#">Instagram</a>
+                <br>
+                <a href="#">Twitter</a></p>
+            </span>
+            <span class="logo">
+                <h3>A Product Of</h3>
+                <a href="http://codesquad.org/" target="_blank" rel="noopener noreferrer">
+                    <img src="./public/images/CodeSquad-logo-b.png" alt="CodeSquad logo">
+                </a>
+            </span>
         </div>
     </footer>
 </body>
