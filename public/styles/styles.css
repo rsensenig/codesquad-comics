@@ -23,25 +23,31 @@ body {
 .header {
     background-color: var(--blue);
     width: auto;
-    color: var(--white);
     padding: 10px 0px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
+
+.comics-logo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.nav-bar {
+    color: var(--white);
+    display: flex;
+    align-items: center;
+} 
 
 .header img {
     width: 300px;
     height: auto;
 }
 
-.header ul {
-    list-style-type: none;
-}
-
-.header li {
-    display: inline;
-}
 
 .header a {
-    padding: 10px 100px;
+    padding: 10px 20px;
     text-decoration: none;
 }
 
@@ -123,13 +129,17 @@ body {
     color: var(--white);
     padding: 20px 10px;
     border-top: solid 5px var(--yellow);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 span.visit-us,
 span.links,
 span.follow-us,
-span.logo {
-    display: inline-block;
+span.cs-logo {
+    display: flex;
+    flex-direction: column;
     padding: 20px 100px;
 }
 
@@ -185,8 +195,10 @@ a:visited {
 }
 
 .comic-table {
-    width: 80%;
-    margin: 35px auto; 
+    width: 100%;
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
 }
 
 .comic-table table {
@@ -196,6 +208,12 @@ a:visited {
 .comic-table thead tr td {
     font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
+}
+
+.comic-table thead div {
+    display: flex;
+    justify-content: space-between;
 }
 
 .comic-table thead {
@@ -211,12 +229,24 @@ a:visited {
     padding: 10px;
 }
 
+.comic-collection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .comic-collection img {
     width: 200px;
     height: auto;
 }
 
-.comic-collection input[type=button] {
+.display-more {
+    display: flex;
+    justify-content: center;
+}
+
+.display-more input[type="button"]{
     background-color: var(--yellow);
     padding: 5px;
     text-align: center;
@@ -224,14 +254,52 @@ a:visited {
     margin: 0px auto;
 }
 
+.index-entry {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.index-entry img {
+    margin: 0px 0px 20px;
+}
+
+.index-entry a,
+.index-entry a:visited {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.index-entry a:hover {
+    color: var(--teal);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.index-entry a:active {
+    color: var(--blue);
+    font-weight: bold;
+    background-color: var(--yellow);
+    text-decoration: none;
+}
+
+span.title {
+    font-style: italic;
+}
+
 .card {
     margin: 10vh auto;
     width: 50%;
     max-width: 50%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-top {
-    width: 100%;
     background-color: var(--blue);
     color: var(--yellow);
     font-weight: bold;
@@ -239,17 +307,15 @@ a:visited {
     padding: 10px 50px;
     border: solid 4px var(--yellow);
     border-radius: 40px 40px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.card-cover {
-    width: 400px;
-    height: 600px;
-    background-image: url("../images/lumberjanes.jpg");
-    background-position: center center;
-    background-size: cover;
+.card-top img {
     border: solid 3px var(--white);
     border-radius: 40px;
-    margin: 15px auto;
+    margin: 1% 8% 8%;
 }
 
 .card-bottom {
@@ -266,4 +332,10 @@ a:visited {
     color: var(--blue);
     text-decoration: underline;
     font-weight: bold;
+}
+
+.collection-details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }

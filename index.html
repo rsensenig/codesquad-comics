@@ -8,18 +8,18 @@
     <link rel="stylesheet" type="text/css" href="./public/styles/styles.css">
 </head>
 <body>
-    <div class="header">
-        <nav>
+    <nav class="header">
+        <div class="comics-logo">
             <a href="index.html">
                 <img src="./public/images/CodeSquad-Comics-logo.png" alt="CodeSquad Comics next to a row of books">
             </a>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="login.html">LOGIN</a></li>
-            </ul>
-        </nav>
-    </div>
+        </div>
+        <div class="nav-bar">
+            <a href="index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="login.html">LOGIN</a>
+        </div>
+    </nav>
     <section>
         <div class="container">
             <h1>CodeSquad Comics</h1>
@@ -28,182 +28,143 @@
     </section>
     <main>
         <div class="container">
+            <h2>COMPLETE COMIC COLLECTION</h2>
             <div class="comic-collection">
-                <h2>COMPLETE COMIC COLLECTION</h2>
-                <a href="#">
-                    <img src="./public/images/fun-home.jpg" alt="a framed picture of a family on a floral background">
-                </a>
-                <br>
-                <i>Fun Home: A Family Tragicomic</i>
-                <br>
-                by Alison Bechdel
-                <br>
-                5 stars
-                <br>
-                <a href="#">Details</a>
-                <br>
-                <a href="#">
-                    <img src="./public/images/watchmen.jpg" alt="a drop of blood dripping over the eye of a smiley face">
-                </a>
-                <br>
-                <i>Watchmen</i>
-                <br>
-                by Alan Moore
-                <br>
-                5 stars
-                <br>
-                <a href="#">Details</a>
-                <br>
-                <a href="#">
-                    <img src="./public/images/hunter-x-hunter.jpg" alt="a happy green haired kid sitting on top of a frog">
-                </a>
-                <br>
-                <i>Hunter X Hunter Vol. 1</i>
-                <br>
-                by Yoshihiro Togashi
-                <br>
-                5 stars
-                <br>
-                <a href="#">Details</a>
-                <br>
-                <a href="lumberjanes.html">
-                    <img src="./public/images/lumberjanes.jpg" alt="a group of five rustically dressed femme people in front of a cabin door with animal heads mounted on both sides">
-                </a>
-                <br>
-                <i>Lumberjanes Vol. 1</i>
-                <br>
-                by Noelle Stevenson
-                <br>
-                4 stars
-                <br>
-                <a href="lumberjanes.html">Details</a>
-                <br>
-                <a href="#">
-                    <img src="./public/images/one-piece.jpg" alt="three happy people on the prow of a ship with seagulls flying in the air">
-                </a>
-                <br>
-                <i>One Piece, Vol. 1: Romance Dawn</i>
-                <br>
-                by Eiichiro Oda
-                <br>
-                5 stars
-                <br>
-                <a href="#">Details</a>
-                <br>
-                <a href="#">
-                    <img src="./public/images/wake.jpg" alt="a group of black women looking over a city with smoke in the distance">
-                </a>
-                <br>
-                <i>Wake: The Hidden History of Women-Led Slave Revolts</i>
-                <br>
-                by Rebecca Hall
-                <br>
-                4 stars
-                <br>
-                <a href="#">Details</a>
-                <br>
-                <a href="#">
-                    <img src="./public/images/black-panther.jpg" alt="a muscly man with a panther head standing in front of a city">
-                </a>
-                <br>
-                <i>Black Panther: A Nation Under Our Feet Book 1</i>
-                <br>
-                by Ta-Nehisi Coates
-                <br>
-                3 stars
-                <br>
-                <a href="#">Details</a>
-                <br>
-                <a href="#">
-                    <img src="./public/images/the-walking-dead.jpg" alt="a group of zombies in front of a picture of a family with drops of blood and bullet casings on it">
-                </a>
-                <br>
-                <i>The Walking Dead, Vol. 1: Days Gone Bye</i>
-                <br>
-                by Robert Kirkman
-                <br>
-                4 stars
-                <br>
-                <a href="#">Details</a>
-                <br>
-                <a href="#">
-                    <img src="./public/images/march.jpg" alt="legs of people marching above people of color sitting next to a Counter Closed sign">
-                </a>
-                <br>
-                <i>March: Book One</i>
-                <br>
-                by John Lewis
-                <br>
-                5 stars
-                <br>
-                <a href="#">Details</a>
-                <br>
-                <a href="#">
-                    <img src="./public/images/batman.jpg" alt="a silouhette of a caped figure over a bolt of lightning">
-                </a>
-                <br>
-                <i>Batman: The Dark Knight Returns</i>
-                <br>
-                by Frank Miller
-                <br>
-                3 stars
-                <br>
-                <a href="#">Details</a>
-                <br>
-                <a href="#">
-                    <img src="./public/images/queer.jpg" alt="a person in a blue suit with an umbrella walking with a rainbow of arrows emitting from their foot">
-                </a>
-                <br>
-                <i>Queer: A Graphic History</i>
-                <br>
-                by Meg-John Barker
-                <br>
-                4 stars
-                <br>
-                <a href="#">Details</a>
-                <br>
-                <a href="#">
-                    <img src="./public/images/parable-of-the-sower.jpg" alt="a black woman with dreads looking determined in front of fire and mounatins">
-                </a>
-                <br>
-                <i>Parable of the Sower</i>
-                <br>
-                by Octavia Butler
-                <br>
-                4 stars
-                <br>
-                <a href="#">Details</a>
-                <p><input type="button" value="Display More"></p>
+                <div class="index-entry">
+                    <a href="#">
+                        <img src="./public/images/fun-home.jpg" alt="a framed picture of a family on a floral background">
+                    </a>
+                    <span class="title">Fun Home: A Family Tragicomic</span>
+                    by Alison Bechdel
+                    5 stars
+                    <a href="#">Details</a>
+                </div>
+                <div class="index-entry">
+                    <a href="#">
+                        <img src="./public/images/watchmen.jpg" alt="a drop of blood dripping over the eye of a smiley face">
+                    </a>
+                    <span class="title">Watchmen</span>
+                    by Alan Moore
+                    5 stars
+                    <a href="#">Details</a>
+                </div>
+                <div class="index-entry">
+                    <a href="#">
+                        <img src="./public/images/hunter-x-hunter.jpg" alt="a happy green haired kid sitting on top of a frog">
+                    </a>
+                    <span class="title">Hunter X Hunter Vol. 1</span>
+                    by Yoshihiro Togashi
+                    5 stars
+                    <a href="#">Details</a>
+                </div>
+                <div class="index-entry">
+                    <a href="lumberjanes.html">
+                        <img src="./public/images/lumberjanes.jpg" alt="a group of five rustically dressed femme people in front of a cabin door with animal heads mounted on both sides">
+                    </a>
+                    <span class="title">Lumberjanes Vol. 1</span>
+                    by Noelle Stevenson
+                    4 stars
+                    <a href="lumberjanes.html">Details</a>
+                </div>
+                <div class="index-entry">
+                    <a href="#">
+                        <img src="./public/images/one-piece.jpg" alt="three happy people on the prow of a ship with seagulls flying in the air">
+                    </a>
+                    <span class="title">One Piece, Vol. 1: Romance Dawn</span>
+                    by Eiichiro Oda
+                    5 stars
+                    <a href="#">Details</a>
+                </div>
+                <div class="index-entry">
+                    <a href="#">
+                        <img src="./public/images/wake.jpg" alt="a group of black women looking over a city with smoke in the distance">
+                    </a>
+                    <span class="title">Wake: The Hidden History of Women-Led Slave Revolts</span>
+                    by Rebecca Hall
+                    4 stars
+                    <a href="#">Details</a>
+                </div>
+                <div class="index-entry">
+                    <a href="#">
+                        <img src="./public/images/black-panther.jpg" alt="a muscly man with a panther head standing in front of a city">
+                    </a>
+                    <span class="title">Black Panther: A Nation Under Our Feet Book 1</span>
+                    by Ta-Nehisi Coates
+                    3 stars
+                    <a href="#">Details</a>
+                </div>
+                <div class="index-entry">
+                    <a href="#">
+                        <img src="./public/images/the-walking-dead.jpg" alt="a group of zombies in front of a picture of a family with drops of blood and bullet casings on it">
+                    </a>
+                    <span class="title">The Walking Dead, Vol. 1: Days Gone Bye</span>
+                    by Robert Kirkman
+                    4 stars
+                    <a href="#">Details</a>
+                </div>
+                <div class="index-entry">
+                    <a href="#">
+                        <img src="./public/images/march.jpg" alt="legs of people marching above people of color sitting next to a Counter Closed sign">
+                    </a>
+                    <span class="title">March: Book One</span>
+                    by John Lewis
+                    5 stars
+                    <a href="#">Details</a>
+                </div>
+                <div class="index-entry">
+                    <a href="#">
+                        <img src="./public/images/batman.jpg" alt="a silouhette of a caped figure over a bolt of lightning">
+                    </a>
+                    <span class="title">Batman: The Dark Knight Returns</span>
+                    by Frank Miller
+                    3 stars
+                    <a href="#">Details</a>
+                </div>
+                <div class="index-entry">
+                    <a href="#">
+                        <img src="./public/images/queer.jpg" alt="a person in a blue suit with an umbrella walking with a rainbow of arrows emitting from their foot">
+                    </a>
+                    <span class="title">Queer: A Graphic History</span>
+                    by Meg-John Barker
+                    4 stars
+                    <a href="#">Details</a>
+                </div>
+                <div class="index-entry">
+                    <a href="#">
+                        <img src="./public/images/parable-of-the-sower.jpg" alt="a black woman with dreads looking determined in front of fire and mounatins">
+                    </a>
+                    <span class="title">Parable of the Sower</span>
+                    by Octavia Butler
+                    4 stars
+                    <a href="#">Details</a>
+                </div>
             </div>
+            <div class="display-more"><input type="button" value="Display More"></div>
         </div>
     </main>
     <footer>
         <div class="footer">
             <span class="visit-us">
                 <h3>Visit Us</h3>
-                <p>CodeSquad Comics
+                    CodeSquad Comics
                     <br>
                     123 Dorchester Avenue
                     <br>
-                    Boston, MA 02124</p>
+                    Boston, MA 02124
             </span>
             <span class="links">
                 <h3>Links</h3>
-                <p><a href="index.html">Home</a>
-                <br>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
-                <br>
-                <a href="login.html">Login</a></p>
+                <a href="login.html">Login</a>
             </span>
             <span class="follow-us">
                 <h3>Follow Us</h3>
-                <p><a href="#">Facebook</a>
-                <br>
+                <a href="#">Facebook</a>
                 <a href="#">Instagram</a>
-                <br>
-                <a href="#">Twitter</a></p>
+                <a href="#">Twitter</a>
             </span>
-            <span class="logo">
+            <span class="cs-logo">
                 <h3>A Product Of</h3>
                 <a href="http://codesquad.org/" target="_blank" rel="noopener noreferrer">
                     <img src="./public/images/CodeSquad-logo-b.png" alt="CodeSquad logo">
