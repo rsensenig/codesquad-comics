@@ -18,6 +18,7 @@ body {
     margin: 0%;
     overflow-x: hidden;
     background-image: linear-gradient(var(--white), var(--teal));
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header {
@@ -36,6 +37,7 @@ body {
 
 .nav-bar {
     color: var(--white);
+    font-family: 'Fredericka the Great', cursive;
     display: flex;
     align-items: center;
 } 
@@ -77,23 +79,24 @@ body {
 
 .container h1,
 .container h2 {
-    text-transform: uppercase;
-    text-align: center;
     color: var(--blue);
-}
-
-.form-container {
-    display: block;
+    font-family: 'Fredericka the Great', cursive;
+    text-transform: uppercase;
     text-align: center;
 }
 
 .form-container div {
-    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 
 .form-container label {
-    display: inline-block;
-    width: 175px;
+    display: inline-flex;
+    flex-basis: 10em;
+    max-width: 10em;
+    justify-content: flex-end;
+    margin-right: 5px;
     text-align: right;
 }
 
@@ -101,8 +104,10 @@ body {
 .form-container input[type=number], 
 .form-container select,
 .form-container textarea {
-    width: 250px;
-    outline: none
+    display: inline-flex;
+    flex-basis: 25em;
+    max-width: 25em;
+    outline: none;
 }
 
 .form-container textarea {
@@ -127,6 +132,7 @@ body {
     background-color: var(--blue);
     width: auto;
     color: var(--white);
+    font-family: 'Fredericka the Great', cursive;
     padding: 20px 10px;
     border-top: solid 5px var(--yellow);
     display: flex;
@@ -141,6 +147,11 @@ span.cs-logo {
     display: flex;
     flex-direction: column;
     padding: 20px 100px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer h3 {

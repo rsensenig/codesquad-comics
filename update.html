@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Comic</title>
     <link rel="stylesheet" type="text/css" href="./public/styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="header">
@@ -25,11 +26,11 @@
             <h1>Update Comic</h1>
             <div class="form-container">
                 <form action="#">
-                    <p><label for="title">Title:</label>
-                    <input type="text" name="title" id="title" value="title value stored in database"></p>
-                    <p><label for="author">Author:</label>
-                    <input type="text" name="author" id="author" value="author value stored in database"></p>
-                    <p><label for="publisher">Publisher:</label>
+                    <div><label for="title">Title:</label>
+                    <input type="text" name="title" id="title" value="title value stored in database"></div>
+                    <div><label for="author">Author:</label>
+                    <input type="text" name="author" id="author" value="author value stored in database"></div>
+                    <div><label for="publisher">Publisher:</label>
                     <select name="publisher" id="publisher">
                         <option value="" selected disabled>publisher value stored in database</option>
                         <option value="BOOM!Box">BOOM! Box</option>
@@ -41,16 +42,15 @@
                         <option value="Simon&Schuster">Simon & Schuster</option>
                         <option value="TopShelfProductions">Top Shelf Productions</option>
                         <option value="VIZMediaLLC">VIZ Media LLC</option>
-                    </select></p>
-                    <p><label for="genre">Genre:</label>
-                    <input type="text" name="genre" id="genre" value="genre data stored in database"></p>
-                    <p><label for="NumberOfPages">Number of pages:</label>
-                    <input type="number" name="NumberOfPages" id="NumberOfPages" placeholder="pages stored in database"></p>
-                    <p><label for="rating">Rating:</label>
-                    <input type="number" name="rating" id="rating" placeholder="rating stored in database"></p>
-                    <p><label for="synopsis">Synopsis:</label>
-                    <textarea name="synopsis" id="synopsis" rows="2" cols="20">synopsis value stored in database</textarea></p>
-                    <br>
+                    </select></div>
+                    <div><label for="genre">Genre:</label>
+                    <input type="text" name="genre" id="genre" value="genre data stored in database"></div>
+                    <div><label for="NumberOfPages">Number of pages:</label>
+                    <input type="number" name="NumberOfPages" id="NumberOfPages" placeholder="pages stored in database"></div>
+                    <div><label for="rating">Rating:</label>
+                    <input type="number" name="rating" id="rating" placeholder="rating stored in database"></div>
+                    <div><label for="synopsis">Synopsis:</label>
+                    <textarea name="synopsis" id="synopsis" rows="2" cols="20">synopsis value stored in database</textarea></div>
                     <input type="submit" value="Submit">
                 </form>
             </div>
@@ -74,9 +74,11 @@
             </span>
             <span class="follow-us">
                 <h3>Follow Us</h3>
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
+                <div class="icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
             </span>
             <span class="cs-logo">
                 <h3>A Product Of</h3>
