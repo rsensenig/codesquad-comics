@@ -21,7 +21,9 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.header {
+/* Navbar styling */
+
+nav {
     background-color: var(--blue);
     width: auto;
     padding: 10px 0px;
@@ -40,34 +42,46 @@ body {
     font-family: 'Fredericka the Great', cursive;
     display: flex;
     align-items: center;
-} 
+}
 
-.header img {
+.nav-bar a {
+    display: none;
+}
+
+nav img {
     width: 300px;
     height: auto;
 }
 
 
-.header a {
+nav a {
     padding: 10px 20px;
     text-decoration: none;
 }
 
-.header a:link,
-.header a:visited {
+nav a:link,
+nav a:visited {
     color: var(--white);
 }
 
-.header a:hover {
+nav a:hover {
     color: var(--yellow);
     font-weight: bold;
 }
 
-.header a:active {
+nav a:active {
     color: var(--blue);
     font-weight: bold;
     background-color: var(--yellow);
 }
+
+a.menu-icon {
+	color: white;
+	display: flex;
+    align-items: center;
+}
+
+/* Container Styling */
 
 .container {
     background-color: var(--white);
@@ -83,7 +97,10 @@ body {
     font-family: 'Fredericka the Great', cursive;
     text-transform: uppercase;
     text-align: center;
+    font-size: 1.2rem; /*mobile*/
 }
+
+/* Form Styling */
 
 .form-container div {
     display: flex;
@@ -93,11 +110,12 @@ body {
 
 .form-container label {
     display: inline-flex;
-    flex-basis: 10em;
-    max-width: 10em;
+    flex: 1;
+    max-width: 30%;
     justify-content: flex-end;
     margin-right: 5px;
     text-align: right;
+    font-size: 0.7em; /*mobile*/
 }
 
 .form-container input[type=text],
@@ -105,8 +123,8 @@ body {
 .form-container select,
 .form-container textarea {
     display: inline-flex;
-    flex-basis: 25em;
-    max-width: 25em;
+    flex: 2;
+    max-width: 75%;
     outline: none;
 }
 
@@ -128,64 +146,11 @@ body {
     margin: 0px auto;
 }
 
-.footer {
-    background-color: var(--blue);
-    width: auto;
-    color: var(--white);
-    font-family: 'Fredericka the Great', cursive;
-    padding: 20px 10px;
-    border-top: solid 5px var(--yellow);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-span.visit-us,
-span.links,
-span.follow-us,
-span.cs-logo {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 100px;
-}
-
-.icons {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer h3 {
-    color: var(--yellow);
-    text-transform: uppercase;
-}
-
-.footer a {
-    text-decoration: none;
-}
-
-.footer a:link,
-a:visited {
-    color: var(--white);      
-}
-
-.footer a:hover {
-    color: var(--yellow);
-    font-weight: bold;
-}
-
-.footer a:active {
-    color: var(--blue);
-    font-weight: bold;
-    background-color: var(--yellow);
-}
-
-.footer img {
-    width: 150px;
-    height: auto;
-}
+/* Button Styling */
 
 .yellow-button {
     background-color: var(--yellow);
+    font-size: 0.75em; /*mobile*/
     padding: 5px;
     text-align: center;
     text-transform: uppercase;
@@ -197,6 +162,7 @@ a:visited {
 .blue-button {
     background-color: var(--blue);
     color: var(--white);
+    font-size: 0.75em; /*mobile*/
     padding: 5px;
     text-align: center;
     text-transform: uppercase;
@@ -205,21 +171,18 @@ a:visited {
     margin: 0px auto;
 }
 
+/* Comic Table Styling */
+
 .comic-table {
     width: 100%;
     margin: 35px auto;
     display: flex;
     justify-content: center;
+    overflow-x:auto; /*mobile*/
 }
 
 .comic-table table {
     border-collapse: collapse;
-}
-
-.comic-table thead tr td {
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
 }
 
 .comic-table thead div {
@@ -235,10 +198,20 @@ a:visited {
     background-color: var(--grey);
 }
 
+.comic-table th,
 .comic-table td {
     border: solid 2px black;
     padding: 10px;
+    font-size: 0.75em; /*mobile*/
 }
+
+.comic-table th {
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Comic Collection Styling */
 
 .comic-collection {
     display: flex;
@@ -301,11 +274,12 @@ span.title {
     font-style: italic;
 }
 
+/* Card Styling */
+
 .card {
     margin: 10vh auto;
-    width: 50%;
-    max-width: 50%;
-    min-width: 400px;
+    width: 90%; /*mobile*/
+    max-width: 90%; /*mobile*/
     display: flex;
     flex-direction: column;
 }
@@ -313,7 +287,9 @@ span.title {
 .card-top {
     background-color: var(--blue);
     color: var(--yellow);
+    font-family: 'Fredericka the Great', cursive;
     font-weight: bold;
+    font-size: 0.8rem; /*mobile*/
     text-align: center;
     padding: 10px 50px;
     border: solid 4px var(--yellow);
@@ -326,7 +302,6 @@ span.title {
 .card-top img {
     border: solid 3px var(--white);
     border-radius: 40px;
-    margin: 1% 8% 8%;
 }
 
 .card-bottom {
@@ -337,6 +312,8 @@ span.title {
     border-right: solid 4px var(--yellow);
     border-bottom: solid 4px var(--yellow);
     border-radius: 0px 0px 40px 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .category {
@@ -349,4 +326,185 @@ span.title {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+/* Footer Styling */
+
+footer {
+    background-color: var(--blue);
+    width: auto;
+    color: var(--white);
+    font-family: 'Fredericka the Great', cursive;
+    padding: 20px 10px;
+    border-top: solid 5px var(--yellow);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+span.visit-us,
+span.links,
+span.follow-us,
+span.cs-logo {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 100px;
+}
+
+.icons {
+    display: flex;
+}
+
+.icons a {
+    padding: 0.25rem;
+}
+
+footer h3 {
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-size: 1.2rem; /*mobile*/
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:link,
+a:visited {
+    color: var(--white);      
+}
+
+footer a:hover {
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+footer a:active {
+    color: var(--blue);
+    font-weight: bold;
+    background-color: var(--yellow);
+}
+
+footer img {
+    width: 150px;
+    height: auto;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    .nav-bar a {
+        display: block;
+        font-size: 1.4rem;
+    }
+
+    a.menu-icon {
+        display: none;
+    }
+
+    .container h1,
+    .container h2 {
+        font-size: 1.4rem;
+    }
+
+    .form-container label {
+        font-size: 1em;
+    }
+    
+    .form-container input[type=text],
+    .form-container input[type=number], 
+    .form-container select,
+    .form-container textarea {
+        max-width: 80%;
+    }
+
+    .form-container input[type=submit] {
+        font-size: 1em;
+    }
+
+    .yellow-button {
+        font-size: 0.85em;
+    }
+    
+    .blue-button {
+        font-size: 0.85em;
+    }
+    
+    .comic-table th,
+    .comic-table td {
+        font-size: 0.85em;
+    }
+
+    footer {
+        flex-direction: row;
+        font-size: 1rem;
+    }
+
+    footer h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container h1,
+    .container h2 {
+        font-size: 2rem;
+    }
+    
+    .card {
+        flex-direction: row;
+        width: 80%;
+        max-width: 80%;
+    }
+
+    .card-top {
+        border: solid 7px var(--yellow);
+        border-right: none;
+        border-radius: 40px 0px 0px 40px;
+        flex: 1
+    }
+
+    .card-top img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .card-bottom {
+        width: 100%;
+        background-color: var(--white);
+        padding: 20px 30px;
+        border: solid 7px var(--yellow);
+        border-left: none;
+        border-radius: 0px 40px 40px 0px;
+        flex: 2;
+    }
+
+    .form-container label {
+        font-size: 1em;
+    }
+    
+    .form-container input[type=text],
+    .form-container input[type=number], 
+    .form-container select,
+    .form-container textarea {
+        max-width: 80%;
+    }
+
+    .form-container input[type=submit] {
+        font-size: 1em;
+    }
+
+    .yellow-button {
+        font-size: 1em;
+    }
+    
+    .blue-button {
+        font-size: 1em;
+    }
+    
+    .comic-table th,
+    .comic-table td {
+        font-size: 1em;
+    }
 }
