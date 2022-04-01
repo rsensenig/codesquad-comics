@@ -37,15 +37,19 @@ nav {
     align-items: flex-start;
 }
 
-.nav-bar {
+.navbar {
     color: var(--white);
     font-family: 'Fredericka the Great', cursive;
-    display: flex;
-    align-items: center;
+    display: none; /* Hide the navbar by default */
 }
 
-.nav-bar a {
-    display: none;
+/* When the navbar has a class of open, display the menu items as a column underneath the hamburger icon */
+
+.navbar.open {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 nav img {
@@ -393,8 +397,12 @@ footer img {
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
-    .nav-bar a {
-        display: block;
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar a {
         font-size: 1.4rem;
     }
 
