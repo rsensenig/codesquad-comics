@@ -1,3 +1,4 @@
+// HOMEWORK 8:
 // Add interactivity to hamburger menu, so that when a user clicks on the hamburger menu, a dropdown menu is shown if the menu items are currently hidden. If the menu items are currently showing, hide the menu items.
 
 // Steps for DOM Manipulation:
@@ -12,7 +13,7 @@
 // 1. Select the hamburger icon.
 const hamburgerIcon = document.querySelector(".menu-icon");
 
-// 2. Write the event handler to show or hide the menu.
+// 2. Write the event handler function to show or hide the menu.
 const toggleMenu = function() {
     // Toggle the class open on the navbar
     const menuItems = document.querySelector(".navbar");
