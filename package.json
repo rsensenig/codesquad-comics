@@ -1,0 +1,36 @@
+{
+  "name": "course-project-rsensenig",
+  "version": "1.0.0",
+  "description": "CodeSquad comics is a collection of graphic novels read by Rachel Sensenig.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeSquad-Boston/course-project-rsensenig.git"
+  },
+  "keywords": [
+    "comics",
+    "CodeSquad"
+  ],
+  "author": "rachel sensenig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeSquad-Boston/course-project-rsensenig/issues"
+  },
+  "homepage": "https://github.com/CodeSquad-Boston/course-project-rsensenig#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.2.10",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  }
+}

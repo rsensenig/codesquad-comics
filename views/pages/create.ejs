@@ -1,0 +1,43 @@
+<%- include('../partials/head') -%>
+
+<%- include('../partials/nav') -%>
+
+    <main>
+        <div class="container">
+            <h1>Create New Comic</h1>
+            <div class="form-container">
+                <form action="#">
+                    <div><label for="title">Title:</label>
+                    <input type="text" name="title" id="title" placeholder="Title"></div>
+                    <div><label for="author">Author:</label>
+                    <input type="text" name="author" id="author" placeholder="Author"></div>
+                    <div><label for="publisher">Publisher:</label>
+                    <select name="publisher" id="publisher">
+                        <option value="" selected disabled>Select</option>
+                        <option value="BOOM!Box">BOOM! Box</option>
+                        <option value="DCComics">DC Comics</option>
+                        <option value="HarryNAbrams">Harry N. Abrams</option>
+                        <option value="IconBooks">Icon Books</option>
+                        <option value="ImageComcis">Image Comcis</option>
+                        <option value="Marvel">Marvel</option>
+                        <option value="Simon&Schuster">Simon & Schuster</option>
+                        <option value="TopShelfProductions">Top Shelf Productions</option>
+                        <option value="VIZMediaLLC">VIZ Media LLC</option>
+                    </select></div>
+                    <div><label for="genre">Genre:</label>
+                    <input type="text" name="genre" id="genre" placeholder="Genre"></div>
+                    <div><label for="number of pages">Number of pages:</label>
+                    <input type="number" name="NumberOfPages" id="NumberOfPages" placeholder="Number of pages" min="1"></div>
+                    <div><label for="rating">Rating:</label>
+                    <input type="number" name="rating" id="rating" placeholder="number (0-5)" min="1" max="5"></div>
+                    <div><label for="synopsis">Synopsis:</label>
+                    <textarea name="synopsis" id="synopsis" rows="2" cols="20" placeholder="Synopsis"></textarea></div>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
+
+<%- include('../partials/footer') -%>
+
+</html>
