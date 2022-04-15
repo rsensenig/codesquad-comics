@@ -6,7 +6,7 @@
         <div class="container">
             <h1>Update Comic</h1>
             <div class="form-container">
-                <form action="#">
+                <form action="/" method="post">
                     <div><label for="title">Title:</label>
                     <input type="text" name="title" id="title" value="title value stored in database"></div>
                     <div><label for="author">Author:</label>
@@ -32,6 +32,8 @@
                     <input type="number" name="rating" id="rating" placeholder="rating stored in database"></div>
                     <div><label for="synopsis">Synopsis:</label>
                     <textarea name="synopsis" id="synopsis" rows="2" cols="20">synopsis value stored in database</textarea></div>
+                    <div><label for="comic-image">Image:</label>
+                    <input type="text" name="comic-image" id="comic-image"></div>
                     <input type="submit" value="Submit">
                 </form>
             </div>
