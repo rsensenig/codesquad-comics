@@ -5,7 +5,7 @@ const booksRouter = require('./book-routes');
 const router = express.Router();
 
 router.use('/', siteRouter);
-router.use('/books', booksRouter);
+router.use('/book', booksRouter);
 router.use('/admin-console', adminRouter);
 
 module.exports = router;

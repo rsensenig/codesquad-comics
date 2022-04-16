@@ -303,6 +303,10 @@ span.title {
     justify-content: center;
 }
 
+.card-top h2 {
+    text-transform: uppercase;
+}
+
 .card-top img {
     border: solid 3px var(--white);
     border-radius: 40px;
