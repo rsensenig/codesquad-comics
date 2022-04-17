@@ -2,7 +2,9 @@ const data = require('../data/data');
 
 module.exports = {
     admin: (req, res) => {
-        res.render('pages/admin');
+        res.render('pages/admin', {
+            booksArray: data
+        });
     },
     create: (req, res) => {
         res.render('pages/create');
