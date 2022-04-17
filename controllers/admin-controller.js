@@ -10,6 +10,10 @@ module.exports = {
         res.render('pages/create');
     },
     update: (req, res) => {
-        res.render('pages/update');
+        const { _id } = request.params;
+        const foundBook = data.find(book => book._id === _id);
+        res.render('pages/update', {
+            singleBook: foundBook
+        });
     }
 }
