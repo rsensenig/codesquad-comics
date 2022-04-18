@@ -6,7 +6,7 @@
         <div class="container">
             <h1>Update Comic</h1>
             <div class="form-container">
-                <form action="/" method="post">
+                <form action="/book/<%= singleBook._id %>?_method=PUT" method="post">
                     <div>
                         <label for="title">Title:</label>
                         <input type="text" name="title" id="title" value="<%= singleBook.title %>">

@@ -1,7 +1,17 @@
 <% for (book of booksArray) { %>
     <tr>
-        <td><%= book.title %></td>
-        <td><input type="button" class="blue-button" value="Edit"></td>
-        <td><input type="button" class="yellow-button" value="Delete"></td>
+        <td>
+            <%= book.title %>
+        </td>
+        <td>
+            <a href="/admin-console/update-book/<%= book._id %>">
+                <input type="button" class="blue-button" value="Edit">
+            </a>
+        </td>
+        <td>
+            <form action="/book/<%= book._id %>?_method=DELETE" method="post" enctype="application/x-www-form-urlencoded">
+                <input type="button" class="yellow-button" value="Delete">
+            </form>
+        </td>
     </tr>
 <% } %>
