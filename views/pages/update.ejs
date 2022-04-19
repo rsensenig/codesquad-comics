@@ -50,7 +50,9 @@
                         <label for="comic-image">Image:</label>
                         <input type="text" name="comic-image" id="comic-image" value="<%= singleBook.image %>">
                     </div>
-                    <input type="submit" value="Submit">
+                    <form action="/book/<%= singleBook._id %>?_method=PUT" method="POST">
+                        <input type="submit" value="Submit">
+                    </form>
                 </form>
             </div>
         </div>
