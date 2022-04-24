@@ -1,4 +1,4 @@
-const { splice } = require('../data/data');
+// const { splice } = require('../data/data');
 const data = require('../data/data');
 
 module.exports = {

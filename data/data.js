@@ -2,7 +2,7 @@ const { v4:uuid } = require('uuid');
 
 module.exports = [
   { 
-    _id: "001", 
+    _id: uuid(), 
     title: "Fun Home: A Family Tragicomic",
     author: "Alison Bechdel",
     publisher: "Mariner Books",
