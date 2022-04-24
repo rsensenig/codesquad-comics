@@ -26,7 +26,7 @@ app.use(morgan('combined'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Use method override as middleware for this project
-app.use(methodOverride());
+app.use(methodOverride('_method'));
 
 // Use express URLEncoded
 app.use(express.urlencoded({extended: true}));
