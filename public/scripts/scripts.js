@@ -169,7 +169,7 @@ const addComicBookInfo = function (comicBook) {
 // 3. Use .addEventListener to bind the "Display More" button to the event of a mouse click, and the above event handler function
 
 if (displayMoreButton) {
-    displayMoreButton.addEventListener("click", clickButton);
+    displayMoreButton.addEventListener("click", addComicBooks);
 };
 
 // SCRATCHPAD SPACE: This is all work I did to break down the problem into smaller piece to figure out how to complete the task.
