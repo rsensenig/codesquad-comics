@@ -1,39 +1,63 @@
-// const { splice } = require('../data/data');
-const data = require('../data/data');
-const { v4:uuid } = require('uuid');
+const Comic = require('../models/comic-model');
 
 module.exports = {
     book: (req, res) => {
-        let id = req.params._id;
-        const foundBook = data.find(book => book._id === String(id));
-        res.render('pages/book', {
-            singleBook: foundBook
-        });
+        let {_id} = req.params;
+        Comic.findOne({_id: _id}, (error, foundComic) => {
+            if(error) {
+                return error;
+            } else {
+                res.render('pages/book', {
+                    singleBook: foundComic
+                });
+            }
+        })
     },
     book_create_post: (req, res) => {
-        const {_id = uuid(), title, author, publisher, genre, pages, rating, synopsis, image} = req.body;
-        data.push({_id, title, author, publisher, genre, pages, rating, synopsis, image});
+        const {title, author, publisher, genre, pages, rating, synopsis, image} = req.body;
+        const newComic = new Comic ({
+            title: title,
+            author: author,
+            publisher: publisher,
+            genre: genre,
+            pages: pages,
+            rating: rating,
+            synopsis: synopsis,
+            image: image
+        });
+
+        newComic.save();
+
         res.redirect('/admin-console');
     },
     book_update_put: (req, res) => {
         const {_id} = req.params;
         const {title, author, publisher, genre, pages, rating, synopsis, image} = req.body;
-        const foundBook = data.find(book => book._id === _id);
-        foundBook.title = title;
-        foundBook.author = author;
-        foundBook.publisher = publisher;
-        foundBook.genre = genre;
-        foundBook.pages = pages;
-        foundBook.rating = rating;
-        foundBook.synopsis = synopsis;
-        foundBook.image = image;
-        res.redirect('/admin-console');
+        Comic.findByIdAndUpdate(_id, {$set: {
+            title: title,
+            author: author,
+            publisher: publisher,
+            genre: genre,
+            pages: pages,
+            rating: rating,
+            synopsis: synopsis,
+            image: image
+        }}, {new: true}, error => {
+            if(error) {
+                return error;
+            } else {
+                res.redirect('/admin-console');
+            }
+        })
     },
     book_delete: (req, res) => {
         const {_id} = req.params;
-        const foundBook = data.find(book => book._id === _id);
-        const index = data.indexOf(foundBook);
-        data.splice(index, 1);
-        res.redirect('/admin-console');
+        Comic.deleteOne({_id: _id}, error => {
+            if(error) {
+                return error;
+            } else {
+                res.redirect('/admin-console');
+            }
+        })
     }
 }

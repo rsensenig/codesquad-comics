@@ -9,11 +9,11 @@
                 <form action="/book/<%= singleBook._id %>?_method=PUT" method="POST">
                     <div>
                         <label for="title">Title:</label>
-                        <input type="text" name="title" id="title" value="<%= singleBook.title %>">
+                        <input type="text" name="title" id="title" value="<%= singleBook.title %>" minlength="1" required>
                     </div>
                     <div>
                         <label for="author">Author:</label>
-                        <input type="text" name="author" id="author" value="<%= singleBook.author %>">
+                        <input type="text" name="author" id="author" value="<%= singleBook.author %>" minlength="1" required>
                     </div>
                     <div>
                         <label for="publisher">Publisher:</label>
@@ -32,15 +32,15 @@
                     </div>
                     <div>
                         <label for="genre">Genre:</label>
-                        <input type="text" name="genre" id="genre" value="<%= singleBook.genre %>">
+                        <input type="text" name="genre" id="genre" value="<%= singleBook.genre %>" minlength="1" required>
                     </div>
                     <div>
                         <label for="NumberOfPages">Number of pages:</label>
-                        <input type="number" name="NumberOfPages" id="NumberOfPages" value="<%= singleBook.pages %>" placeholder="pages stored in database">
+                        <input type="number" name="NumberOfPages" id="NumberOfPages" value="<%= singleBook.pages %>" placeholder="pages stored in database" min="1">
                     </div>
                     <div>
                         <label for="rating">Rating:</label>
-                        <input type="number" name="rating" id="rating" value="<%= singleBook.rating %>" placeholder="rating stored in database">
+                        <input type="number" name="rating" id="rating" value="<%= singleBook.rating %>" placeholder="rating stored in database" min="1" max="5">
                     </div>
                     <div>
                         <label for="synopsis">Synopsis:</label>
