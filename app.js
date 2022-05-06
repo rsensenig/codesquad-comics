@@ -37,6 +37,9 @@ app.use(routes);
 // Configure Node.js to use EJS as its views engine
 app.set('view engine', 'ejs');
 
+// Require the connection.js into app.js
+require('./config/connection');
+
 // use app.listen() to start the server and send a console.log to the terminal with the localhost URL
 
 // Server

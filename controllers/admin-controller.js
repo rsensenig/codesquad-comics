@@ -1,19 +1,30 @@
-const data = require('../data/data');
+const Comic = require('../models/comic-model');
 
 module.exports = {
     admin: (req, res) => {
-        res.render('pages/admin', {
-            booksArray: data
-        });
+        Comic.find({}, (error, allComics) => {
+            if(error) {
+                return error;
+            } else {
+                res.render('pages/admin', {
+                    booksArray: allComics
+                });
+            }
+        })
     },
     create: (req, res) => {
         res.render('pages/create');
     },
     update: (req, res) => {
         const { _id } = req.params;
-        const foundBook = data.find(book => book._id === _id);
-        res.render('pages/update', {
-            singleBook: foundBook
-        });
+        Comic.findOne({_id: _id}, (error, foundComic) => {
+            if(error) {
+                return error;
+            } else {
+                res.render('pages/update', {
+                    singleBook: foundComic
+                });
+            }
+        })
     }
 }
