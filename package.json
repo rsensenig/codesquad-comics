@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js"
   },
+  "engines": {
+    "node": "16.14.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CodeSquad-Boston/course-project-rsensenig.git"
