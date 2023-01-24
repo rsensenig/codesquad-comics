@@ -15,7 +15,7 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#project-status">Project Status</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -74,7 +74,11 @@ To get a local copy up and running follow the following steps.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- Project Status -->
+## Project Status
+This project is still under development. Here is a log of current bugs that I'm working on:
 
+1/23/2023 - I switched deploying my site from Heroku to Cyclic since Heroku removed most of its free services. With the site deployed on Cyclic though, I'm logged out when I try to edit or delete comics on my Admin dashboard. I believe this is related to the fact that Cyclic is serverless. My Admin dashboard still fully works locally.
 
 <!-- CONTACT -->
 ## Contact
